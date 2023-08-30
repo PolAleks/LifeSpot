@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="/Static/CSS/index.css" rel="stylesheet" type="text/css" />
-    <script src="/Static/JS/index.js"></script>
+    <!--<script src="/Static/JS/index.js"></script>-->
 </head>
 
 <!--Хедер страницы находится над тегом body-->
@@ -15,8 +15,10 @@
     <p>Покажем, что происходит прямо сейчас</p>
     <form action="/" method="get">
         <div class="search_form">
-            <input type="search" name="search" id="search" placeholder="Введите название трансляции" />
-            <input type="submit" class="buttom" value="Найти трансляцию" />
+            <input type="search" oninput=" let element = document.getElementsByTagName('input')[0].value;
+                                           alert(`Пользователь ввёл символ: ${element}`); " 
+                   name="search" id="search" placeholder="Введите название трансляции" />
+            <!--<input type="submit" class="buttom" value="Найти трансляцию" />-->
         </div>
     </form>
 </header>
