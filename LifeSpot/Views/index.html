@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="/Static/CSS/index.css" rel="stylesheet" type="text/css" />
+    <script src="/Static/JS/index.js"></script>
 </head>
+
+<!--Хедер страницы находится над тегом body-->
+<header>
+    <!--Заголовок страницы-->
+    <h1 id="logo">LifeSpot — прямые трансляции с улиц</h1>
+    <!--Параграф-->
+    <p>Покажем, что происходит прямо сейчас</p>
+    <form action="/" method="get">
+        <div class="search_form">
+            <input type="search" name="search" id="search" placeholder="Введите название трансляции" />
+            <input type="submit" class="buttom" value="Найти трансляцию" />
+        </div>
+    </form>
+</header>
+
+<!--Сайд-бар страницы (пока все ссылки ведут на главную)-->
+<aside id="sidebar">
+    <div class="navbar">
+        <a href="/"><p>Все трансляции</p></a>
+        <a href="/"><p>О проекте</p></a>
+    </div>
+</aside>
 <body>
-    <header>
-        <!--Заголовок страницы-->
-        <h1 id="logo">LifeSpot — прямые трансляции с улиц</h1>
-        <!--Параграф-->
-        <p>Покажем, что происходит прямо сейчас</p>
-        <form action="/" method="get">
-            <div class="search_form">
-                <input type="search" name="search" id="search" placeholder="Введите название трансляции" />
-                <input type="submit" class="buttom" value="Найти трансляцию" />
-            </div>
-        </form>
-    </header>
+
     <main>
         <div>
             <div class="video-container">
@@ -39,13 +51,9 @@
                 <h3>Лондон, автобусный маршрут</h3>
             </div>
         </div>
-        <aside id="sidebar">
-            <div class="navbar">
-                <a href="/"><p>Все трансляции</p></a>
-                <a href="/"><p>О проекте</p></a>
-            </div>
-        </aside>
     </main>
+
+    <!--Сайд-бар страницы (пока все ссылки ведут на главную)-->
     <footer>
         <p>LifeSpot - все права защищены</p>
         <p>Связаться с нами: contact@lifespot.ru</p>
