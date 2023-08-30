@@ -15,8 +15,12 @@
     <p>Покажем, что происходит прямо сейчас</p>
     <form action="/" method="get">
         <div class="search_form">
-            <input type="search" oninput=" let element = document.getElementsByTagName('input')[0].value;
-                                           alert(`Пользователь ввёл символ: ${element}`); " 
+            <input type="search" oninput="
+                   let elements = document.getElementsByClassName('video-container');
+                   for (let i = 0; i < elements.length; i++)
+                   {
+                       console.log(elements[i]);
+                   }" 
                    name="search" id="search" placeholder="Введите название трансляции" />
             <!--<input type="submit" class="buttom" value="Найти трансляцию" />-->
         </div>
