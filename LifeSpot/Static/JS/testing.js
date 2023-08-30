@@ -6,3 +6,4 @@ let name = prompt('Как вас зовут? ');
 
 let elements = document.getElementsByTagName('*');
 alert(`Данная html страница содержит ${elements.length} элементов`);
+
