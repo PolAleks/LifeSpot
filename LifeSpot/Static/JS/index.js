@@ -1,4 +1,4 @@
-﻿//function handleSession() {
+﻿//const handleSession = function() {
 //    // Создаем ассоциативный массив Map для сохранения сессии
 //    let session = new Map();
 
@@ -30,7 +30,7 @@
 //        console.log(`${key}: ${value}`);
 //    }
 //}
-function filterContent() {
+const filterContent = function() {
     // Считываем ввод пользователя
     let searchData = document.getElementsByTagName('input')[0].value.toLowerCase();
 
