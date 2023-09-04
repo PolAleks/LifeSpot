@@ -6,6 +6,9 @@
     <link href="/Static/CSS/index.css" rel="stylesheet" type="text/css" />
     <script src="/Static/JS/index.js"></script>
     <!--<script src="/Static/JS/testing.js"></script>-->
+    <script>
+        handleSession();
+    </script>
 </head>
 
 <!--Хедер страницы находится над тегом body-->
@@ -16,7 +19,7 @@
     <p>Покажем, что происходит прямо сейчас</p>
     <form action="/" method="get">
         <div class="search_form">
-            <input type="search" oninput="Filter()" name="search" id="search" placeholder="Введите название трансляции" />
+            <input type="search" oninput="filterContent()" name="search" id="search" placeholder="Введите название трансляции" />
             <!--<input type="submit" class="buttom" value="Найти трансляцию" />-->
         </div>
     </form>
